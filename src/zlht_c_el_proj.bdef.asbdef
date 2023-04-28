@@ -1,0 +1,9 @@
+projection;
+
+define behavior for zlht_c_el_proj alias Projec_Behavior
+{
+  use update;
+
+  use action createInternalOrder;
+  use action createVendor;
+}

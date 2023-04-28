@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access Control Event Location'
+@MappingRole: true
+define role ZACC_R_EL_ROOT {
+    grant 
+        select
+            on
+                ZLHT_R_EL_ROOT
+                    where
+                        (locationname) = aspect pfcg_auth(ZBOBJEKT0, LOCATION);
+                        
+}

@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access Control Event-Projektion'
+@MappingRole: true
+define role ZACC_C_EL_PROJ {
+    grant 
+        select
+            on
+                ZLHT_C_EL_PROJ
+                    where
+                        inheriting conditions from entity ZLHT_R_EL_ROOT;
+                        
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for event location'
+define service ZLHT_R_SD_EL {
+  expose zlht_c_el_proj as Location;
+}
